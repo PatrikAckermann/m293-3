@@ -14,7 +14,7 @@ var router = createHashRouter(createRoutesFromElements(
       <Route path="about" element={<About/>} />
       <Route path="imprint" element={<Imprint/>} />
   </Route>
-), {basename: "/m293"})
+), {basename: "/m293-3"})
 
 export default function App() {
   return (<RouterProvider router={router}/>)
