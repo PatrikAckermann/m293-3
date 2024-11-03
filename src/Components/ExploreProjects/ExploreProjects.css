@@ -1,0 +1,27 @@
+.Explore {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.Explore-Title {
+    font-size: 2vw;
+    color: var(--black);
+}
+
+.Explore-Button {
+    background-color: var(--black);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .Explore-Title, .Contact-Title {
+        font-size: 5vw;
+    }
+}

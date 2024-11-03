@@ -1,0 +1,59 @@
+.Project {
+    background-color: var(--grey);
+    min-width: 50vw;
+    max-width: 50vw;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.Project > * {
+    margin-bottom: 10px;
+}
+
+.Project-Image {
+    max-width: 90%;
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.Project-Title {
+    margin-top: 20px;
+    font-size: 3vw;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.Project-Text {
+    font-size: 2vw;
+    color: var(--black);
+}
+
+.Project-Table {
+    width: 90%;
+    margin: auto;
+}
+
+.Project-Table, th, td {
+    border-collapse: collapse;
+    border: 1px solid var(--black);
+}
+
+td {
+    padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .Project-Title {
+        font-size: 5vw;
+    }
+
+    .Project-Text {
+        font-size: 4vw;
+    }
+
+    .Project-Image {
+        max-height: 300px;
+    }
+}

@@ -1,0 +1,19 @@
+.Footer {
+    height: 80px;
+    background-color: #222222;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.Footer-Text {
+    color: var(--white);
+    margin: auto 0;
+}
+
+.Footer-Link {
+    color: var(--white);
+    text-underline-offset: 4px;
+    cursor: pointer;
+}

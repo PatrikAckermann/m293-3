@@ -1,0 +1,110 @@
+.Home {
+    
+}
+
+.Home-Container {
+    margin: 8vh 0;
+    transition: ease-in-out 0.5s;
+}
+
+.Home-Title-Container {
+    margin: 12vh 0 14vh 0;
+}
+
+.Home-Title-Title {
+    font-size: 8vw;
+    color: var(--colored);
+    font-weight: 600;
+}
+
+.Home-Title-Text {
+    font-size: 6vw;
+    color: var(--black);
+    font-weight: 300;
+}
+
+.Home-SideBySide-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+
+.Home-SideBySide-Item {
+    width: 40vw;
+}
+
+.Home-SideBySide-Title {
+    font-size: 6vw;
+}
+
+.Home-SideBySide-Text {
+    font-size: 2vw;
+}
+
+.Home-Contact {
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.Home-Contact-Title {
+    font-size: 2vw;
+    margin-right: auto;
+}
+
+.Home-Contact-Input {
+    flex-grow: 1;
+    min-height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 1vw;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: var(--white);
+    color: var(--black);
+    margin: 20px 0;
+}
+
+.Home-Contact-Button {
+    background-color: var(--black);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.Home-Contact-Warning {
+    color: var(--warning);
+}
+
+@media (max-width: 768px) {
+    .Home-Container {
+        margin: 4vh 0;
+    }
+
+    .Home-Title-Container {
+        margin: 8vh 0 10vh 0;
+    }
+
+    .Home-Title-Title {
+        font-size: 8.8vw;
+    }
+
+    .Home-Title-Text {
+        font-size: 6.6vw;
+    }
+
+    .Home-Explore-Title, .Home-Contact-Title {
+        font-size: 5vw;
+    }
+
+    .Home-Contact-Input {
+        font-size: 3vw;
+    }
+}

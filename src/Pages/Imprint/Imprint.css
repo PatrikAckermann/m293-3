@@ -1,0 +1,25 @@
+.Imprint-Title {
+    font-size: 6vw;
+    margin-bottom: 3vh;
+}
+
+.Imprint-Text {
+    font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+    .Imprint-Title {
+        font-size: 12vw;
+    }
+
+    .Imprint-Text {
+        font-size: 6vw;
+    }
+}
+
+.Imprint-Text-Container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

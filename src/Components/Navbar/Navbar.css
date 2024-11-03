@@ -1,0 +1,128 @@
+.Navbar {
+    height: 100px;
+    background-color: var(--white);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+
+    transition: 250ms ease-in-out;
+
+    z-index: 5;
+}
+
+.Navbar-Placeholder {
+    height: 100px;
+}
+
+.Navbar.scrolled {
+    height: 60px;
+    box-shadow: 0 2px 4px -2px var(--black);
+}
+
+.Navbar-Title-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto 0;
+    height: 80px;
+}
+
+.Navbar.scrolled > .Navbar-Title-Container {
+    height: 60px;
+}
+
+.Navbar-Title {
+    color: var(--black);
+    cursor: pointer;
+}
+
+.Navbar-Links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+
+    transition: 50ms ease-in-out;
+}
+
+.Navbar-Link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    text-wrap: nowrap;
+}
+
+.Navbar-Link.active {
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}
+
+.Navbar-Button {
+    display: none;
+    width: 50px;
+    height: 50px;
+    color: var(--black);
+}
+
+@media (max-width: 768px) {
+    .Navbar {
+        flex-direction: column;
+        min-height: 80px;
+        height: auto;
+    }
+
+    .Navbar.scrolled {
+        height: auto;
+    }
+
+    .Navbar-Links {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 0;
+        overflow: hidden; /* Prevent overflow */
+        transition: height 0.3s ease-in-out; /* Smooth transition */
+        margin-left: 10vw;
+    }
+
+    .Navbar-Button {
+        display: flex;
+    }
+
+    .Navbar-Links-Toggled {
+        visibility: visible;
+        height: calc(100vh - 80px);
+    }
+
+    .Navbar-Link {
+        width: 100vw;
+        height: 100px;
+        font-size: 4vh;
+        text-align: left;
+        line-height: 6vh;
+        height: auto;
+    }
+
+    .Navbar-Link.active {
+        text-decoration: none;
+        color: var(--colored);
+        font-size: 6vh;
+        line-height: 8vh;
+    }
+
+    .Navbar-Placeholder {
+        height: 80px;
+    }
+
+    .Navbar-Title {
+        font-size: 6vw;
+    }
+}

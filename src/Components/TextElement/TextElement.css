@@ -1,0 +1,21 @@
+.TextElement {
+
+}
+
+.TextElement-Title {
+    font-size: 4vw;
+}
+
+.TextElement-Text {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    .TextElement-Title {
+        font-size: 8vw;
+    }
+
+    .TextElement-Text {
+        font-size: 4vw;
+    }    
+}
